@@ -62,7 +62,7 @@ const ProductDetail = () => {
               </p>
             </div>
 
-            <Button size="lg" className="w-full">
+            <Button size="lg" className="w-full" onClick={() => { addItem(product); toast.success(`${product.name} adicionado ao carrinho!`); }}>
               Adicionar ao Carrinho
             </Button>
           </div>
