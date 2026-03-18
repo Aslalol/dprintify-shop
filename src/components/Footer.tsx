@@ -5,30 +5,25 @@ export function Footer() {
     <footer className="bg-navy text-navy-foreground">
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
-                <span className="text-primary-foreground font-display font-bold text-sm">3D</span>
+                <span className="text-primary-foreground font-display font-bold text-sm">L</span>
               </div>
-              <span className="font-display font-bold text-lg">PrintShop</span>
+              <span className="font-display font-bold text-lg">Lume 3D</span>
             </div>
             <p className="text-sm text-navy-foreground/60 max-w-xs">
               Sua loja especializada em filamentos e acessórios para impressão 3D. Qualidade e confiança.
             </p>
           </div>
-
-          {/* Contact */}
           <div>
             <h4 className="font-display font-semibold text-sm mb-4">Atendimento</h4>
             <ul className="space-y-3 text-sm text-navy-foreground/70">
-              <li className="flex items-center gap-2"><Mail className="w-4 h-4" /> contato@printshop3d.com.br</li>
+              <li className="flex items-center gap-2"><Mail className="w-4 h-4" /> contato@lume3d.com.br</li>
               <li className="flex items-center gap-2"><Phone className="w-4 h-4" /> (11) 99999-0000</li>
               <li className="flex items-center gap-2"><MapPin className="w-4 h-4" /> São Paulo, SP</li>
             </ul>
           </div>
-
-          {/* Payment */}
           <div>
             <h4 className="font-display font-semibold text-sm mb-4">Formas de Pagamento</h4>
             <div className="flex flex-wrap gap-2">
@@ -40,9 +35,8 @@ export function Footer() {
             </div>
           </div>
         </div>
-
         <div className="mt-12 pt-6 border-t border-navy-foreground/10 text-center text-xs text-navy-foreground/40">
-          © 2026 PrintShop 3D. Todos os direitos reservados.
+          © 2026 Lume 3D. Todos os direitos reservados.
         </div>
       </div>
     </footer>

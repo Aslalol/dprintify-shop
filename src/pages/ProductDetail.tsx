@@ -5,11 +5,14 @@ import { Footer } from "@/components/Footer";
 import { Star, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useCart } from "@/contexts/CartContext";
+import { toast } from "sonner";
 import { Badge } from "@/components/ui/badge";
 
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
   const product = products.find((p) => p.id === id);
+  const { addItem } = useCart();
 
   if (!product) {
     return (
@@ -60,7 +63,7 @@ const ProductDetail = () => {
               </p>
             </div>
 
-            <Button size="lg" className="w-full">
+            <Button size="lg" className="w-full" onClick={() => { addItem(product); toast.success(`${product.name} adicionado ao carrinho!`); }}>
               Adicionar ao Carrinho
             </Button>
           </div>
