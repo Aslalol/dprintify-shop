@@ -12,6 +12,7 @@ import { Badge } from "@/components/ui/badge";
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
   const product = products.find((p) => p.id === id);
+  const { addItem } = useCart();
 
   if (!product) {
     return (
