@@ -5,6 +5,8 @@ import { Footer } from "@/components/Footer";
 import { Star, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useCart } from "@/contexts/CartContext";
+import { toast } from "sonner";
 import { Badge } from "@/components/ui/badge";
 
 const ProductDetail = () => {
